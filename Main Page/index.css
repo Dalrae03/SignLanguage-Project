@@ -1,0 +1,51 @@
+body { 
+    margin: 0;
+  }
+
+#header {
+    width: 100vw;
+    height: 77px;
+    background-color: #959595;
+}
+
+
+
+.navbar {
+    padding: 18px 0;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.nav_menu {
+    display: flex;
+    height: 36px;
+}
+
+
+.navbar-brand {
+    height: 36px;
+    width: 138px;
+    background-color: #D9D9D9;
+}
+
+
+.navbar-content {
+    display: flex;
+    height: 36px;
+    margin: 9px 0 0 0;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 0 0 0 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
