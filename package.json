@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "singlanguage-project",
+  "description": "공모전 수어교육 프로젝트",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dalrae03/SingLanguage-Project.git"
+  },
+  "author": "Yejin_Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dalrae03/SingLanguage-Project/issues"
+  },
+  "homepage": "https://github.com/Dalrae03/SingLanguage-Project#readme"
+}
