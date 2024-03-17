@@ -2,20 +2,32 @@ body {
     margin: 0;
   }
 
+#Content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1619px;
+    height: 991px;
+    background-color: rgb(0, 0, 0, 0.65);
+    margin: auto;
+    border-radius: 15px;
+}
+
+
 #header {
-    width: 100vw;
-    height: 77px;
-    background-color: #959595;
+    width: 1619px;
+    height: 103px;
+    background-color: #1A1B24;
+    border-radius: 15px 15px 0px 0px;
 }
 
 
 
 .navbar {
-    padding: 18px 0;
+    padding: 23px 0;
     justify-content: space-between;
-    width: 1180px;
     margin: 0 auto;
-    position: relative;
 }
 
 
@@ -26,16 +38,17 @@ body {
 
 
 .navbar-brand {
-    height: 36px;
-    width: 138px;
-    background-color: #D9D9D9;
+    height: 47.7px;
+    width: 236.5px;
+    margin: 0 0 0 50px;
+    background-image: url('./logo.svg')
 }
 
 
 .navbar-content {
     display: flex;
     height: 36px;
-    margin: 9px 0 0 0;
+    margin: 20px 0 0 0;
     justify-content: center;
     list-style-type: none;
     padding: 0;
@@ -47,5 +60,5 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }

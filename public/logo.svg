@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.49 47.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: GothicA1-Black, 'Gothic A1';
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Binggrae-Bold-KSCpc-EUC-H, Binggrae;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #18a0fb;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(2.63 15.25)"><tspan x="0" y="0">CTH</tspan></text>
+  <text class="cls-2" transform="translate(0 8)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-1" transform="translate(25.49 39.62)"><tspan x="0" y="0">Connect </tspan><tspan class="cls-4" x="96.46" y="0">T</tspan><tspan x="109.36" y="0">o Hand</tspan></text>
+</svg>
