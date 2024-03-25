@@ -1,30 +1,39 @@
 body { 
     margin: 0;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
   }
 
 #Content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 1619px;
     height: 991px;
-    background-color: rgb(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.65);
     margin: auto;
     border-radius: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 스크롤바 없애기 */
+    scrollbar-width: none; /* 파이어폭스 스크롤바 없애기 */
 }
 
+#Content::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 없애기 */
+}
 
 #header {
     width: 1619px;
     height: 103px;
-    background-color: #1A1B24;
     border-radius: 15px 15px 0px 0px;
+    background-color: #1A1B24;
+    position: fixed;
 }
 
 
 
-.navbar {
+#navbar {
+    display: flex;
     padding: 23px 0;
     justify-content: space-between;
     margin: 0 auto;
@@ -34,6 +43,7 @@ body {
 .nav_menu {
     display: flex;
     height: 36px;
+    width: 600px;
 }
 
 
@@ -45,7 +55,8 @@ body {
 }
 
 
-.navbar-content {
+
+#navbar-content {
     display: flex;
     height: 36px;
     margin: 20px 0 0 0;
@@ -62,3 +73,66 @@ a {
     text-decoration: none;
     color: white;
 }
+
+#nav_button {
+    display: flex;
+    margin-right: 29px;
+    margin-top: 5px;
+}
+
+#button1 {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 28px;
+    background-color: rgba(71, 72, 93, 1);
+    border-color: rgba(71, 72, 93, 1);
+}
+
+#button2 {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-color: rgba(71, 72, 93, 1);
+}
+
+
+#main-container {
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 39px;
+}
+
+#banner {
+    width: 1180px;
+    height: 363px;
+    background-color: azure;
+}
+
+#button-group {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#button-setting {
+    width: 578px;
+    height: 101px;
+    font-size: 20px;
+}
+
+#sub-container {
+    width: 1180px;
+    height: 600px;
+}
+
+#image {
+    width: 680px;
+    height: 440px;
+    background-color: gainsboro;
+}
+
