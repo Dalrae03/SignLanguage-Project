@@ -1,10 +1,13 @@
 body { 
     margin: 0;
-    background-color: beige;
+    background-image: url(test.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
 #Content {
@@ -67,11 +70,17 @@ body {
 
 .nav-item {
     padding: 0 0 0 40px;
+    font-size: 15px;
+    height: 20px;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+#nav-link {
+    padding-bottom: 10px;
 }
 
 #nav_button {
@@ -104,7 +113,7 @@ a {
     justify-content: center;
     flex-direction:column;
     margin: auto;
-    margin-top: 39px;
+    margin-top: 142px;
 }
 
 #banner {
@@ -128,11 +137,113 @@ a {
 #sub-container {
     width: 1180px;
     height: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#text-box1{
+    width: 284px;
+    height: 363.8px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 99px;
+}
+
+#text-box2{
+    width: 284px;
+    height: 363.8px;
+    color: white;
+    margin-top: 80px;
+    margin-right: 99px;
 }
 
 #image {
     width: 680px;
     height: 440px;
+    margin: 40px;
     background-color: gainsboro;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    color: white;
+}
+
+p {
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+#go-button {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+#game-container {
+    height: 352px;
+}
+
+#content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#game-box {
+    width: 380px;
+    height: 291px;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+#game-image {
+    width: 380px;
+    height: 187px;
+    background: rgba(240, 240, 240, 1);
+}
+
+#game-text {
+    margin-top: 19px;
+    margin-left: 31px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#game-text {
+    display: flex;
+}
+
+#game-ex {
+    font-size: 12px;
+    height: 30px;
+    width: 230px;
+}
+
+#game-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 58px;
+}
+
+#logo-text {
+    font-size: 28.44px;
+    font-weight: 700;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 163px;
+    margin-bottom: 43px;
+}
