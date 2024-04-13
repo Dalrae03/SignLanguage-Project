@@ -60,24 +60,59 @@ body {
 
 
 #navbar-content {
+    list-style-type: none;
     display: flex;
     height: 36px;
     margin: 20px 0 0 0;
     justify-content: center;
-    list-style-type: none;
     padding: 0;
 }
 
-.nav-item {
-    padding: 0 0 0 40px;
+#navbar-content li {
+    padding: 3px 0 0 40px;
     font-size: 15px;
     height: 20px;
+    position: relative;
 }
 
-a {
+#navbar-content li a {
     text-decoration: none;
     color: white;
+
+    transition: all 0.3s;
 }
+
+#navbar-content li a:hover {
+    color: skyblue;
+}
+
+#dropdown_menu {
+    display: none;
+}
+
+#navbar-content li:hover #dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 28%;
+    top: 100%;
+    background-color: #1A1B24;
+}
+
+#navbar-content li:hover #dropdown_menu ul {
+    display: block;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+#navbar-content li:hover #dropdown_menu ul li {
+    width: 10px;
+}
+
+#dropdown_menu ul li a {
+    position: absolute;
+    right: 30px;
+}
+
 
 #nav-link {
     padding-bottom: 10px;

@@ -1,5 +1,5 @@
 const express = require('express');
-const helmet = require('helmet');
+const helmet = require('helmet'); //서버 어플리케이션의 보안 강화. 노드 보안 모듈
 const app = express();
 /*
 const ejs = require('ejs')
