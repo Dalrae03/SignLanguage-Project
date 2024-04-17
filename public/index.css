@@ -83,7 +83,7 @@ body {
 }
 
 #navbar-content li a:hover {
-    color: skyblue;
+    color: rgba(24, 160, 251, 1);
 }
 
 #dropdown_menu {

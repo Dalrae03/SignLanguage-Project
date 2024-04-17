@@ -5,16 +5,15 @@ const router = express.Router(); //주소를 만들 때 사용하는 도구
 
 // 주소를 만들어주는 도구 get
 router.get('/', function(req, res){
-    let query = req.query;
-    console.log(query)
-
-    res.render('Main Page/index')
-    // res.send({"Key":"Value"})  
-  // res.render('Main Page/index',{title: "CTH 메인페이지"}) //그림파일 전달할 때 데이터 파일까지 크롬브라우저에 같이 전달
+  //let query = req.query;
+  //console.log(query)
+  //res.render('Main Page/index')
+  // res.send({"Key":"Value"})  
+  res.render('layout',{title: "CTH 메인페이지"}) //그림파일 전달할 때 데이터 파일까지 크롬브라우저에 같이 전달
   })
   
 router.get('/about', function(req, res){
-    res.send('About Page')
+    res.send('About Page')  //응답으로 문자, 숫자, 딕셔너리같이 데이터를 전달할때는 send 사용
   })
 
 
