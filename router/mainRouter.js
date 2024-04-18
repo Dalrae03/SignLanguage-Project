@@ -9,7 +9,7 @@ router.get('/', function(req, res){
   //console.log(query)
   //res.render('Main Page/index')
   // res.send({"Key":"Value"})  
-  res.render('layout',{title: "CTH 메인페이지"}) //그림파일 전달할 때 데이터 파일까지 크롬브라우저에 같이 전달
+  res.render('layout',{title: "CTH 메인페이지", content: "Main Page/index"}) //그림파일 전달할 때 데이터 파일까지 크롬브라우저에 같이 전달
   })
   
 router.get('/about', function(req, res){
