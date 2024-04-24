@@ -1,3 +1,4 @@
+// 컴퓨터 본체의 스위치 역할을 하는 기본 루트 자바스크립트 파일
 const express = require('express');
 const helmet = require('helmet'); //서버 어플리케이션의 보안 강화. 노드 보안 모듈
 const app = express();
