@@ -17,6 +17,11 @@ router.get('/singup', function(req, res){
   res.render('SingUp Page/singup',{title: "CTH 회원가입 페이지"})
   })
 
+router.get('/login', function(req, res){
+  res.render('Login Page/login',{title: "CTH 로그인 페이지"})
+  })
+
+
 router.get('/about', function(req, res){
     res.send('About Page')  //응답으로 문자, 숫자, 딕셔너리같이 데이터를 전달할때는 send 사용
   })
