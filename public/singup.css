@@ -70,6 +70,9 @@ p {
 
 
 
+form {
+    width: 577px;
+}
 
 input {
     width: 577px;
@@ -81,7 +84,7 @@ form > p {
     margin-bottom: 16px;
 }
 
-#information > a {
+#login-move {
     text-decoration: none;
     color: rgba(140, 122, 179, 1);
 }

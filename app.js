@@ -24,6 +24,7 @@ app.use(express.urlencoded()); //post방식 api사용시 필요한 설정
 const mainRouter = require('./router/mainRouter')
 app.use('/', mainRouter) //미들웨어 통해 상세 주소지정(규칙지정) 가능
 
+// app.listen -> 서버가 만들어져서 컴퓨터에서 동작하도록 한다.
 app.listen(3000, function(req,res){
   console.log("서버 실행 중")
 })

@@ -27,22 +27,22 @@
             
                 <form>
                     <p>이름</p>
-                    <input type="text" style="font-size: 25px;"/>
+                    <input required maxlength="15" type="text" style="font-size: 25px;"/>
                     <p>Email</p>
-                    <input type="email" style="font-size: 25px;"/>
+                    <input required type="email" style="font-size: 25px;"/>
                     <p>Password</p>
-                    <input type="password" style="font-size: 25px;"/>
-                </form>
-                <a href="#">이미 계정이 있나요?</a>
-            
-                <div id="button-group">
-                    <div id="aip-group">
-                        <img src="/public/talk.png">
-                        <img src="/public/gogle.png">
-                        <img src="/public/facebook.png">
+                    <input required type="password" style="font-size: 25px;"/>
+                    <a href="#" id="login-move">이미 계정이 있나요?</a>
+
+                    <div id="button-group">
+                        <div id="aip-group">
+                            <img src="/public/talk.png">
+                            <img src="/public/gogle.png">
+                            <img src="/public/facebook.png">
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="finsh-button">회원가입하기</button>
                     </div>
-                    <button type="button" class="btn btn-secondary" id="finsh-button">회원가입하기</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
