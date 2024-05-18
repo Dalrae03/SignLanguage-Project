@@ -10,18 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .video-background {
+          position: fixed; /* 비디오를 화면에 고정 */
+          right: 0;
+          bottom: 0;
+          min-width: 100%; /* 최소 너비 100% */
+          min-height: 100%; /* 최소 높이 100% */
+          width: auto; /* 자동 너비 조정 */
+          height: auto; /* 자동 높이 조정 */
+          z-index: -100; /* 다른 요소들 뒤에 위치 */
+          background: no-repeat;
+          background-size: cover; /* 배경 크기 커버로 설정 */
+      }
+  </style>
 </head>
 
 <body>
     
     <div id="body">
+      <video autoplay muted loop class="video-background">
+        <source src="/public/backgroundTest.mp4" type="video/mp4">
+      </video>
         <div id="main-container">
           <div id="banner">
             <!--이미지 넣기-->
           </div>
 
           <div id="button-group">
-            <button type="button" class="btn btn-outline-light" id="button-setting">수어 학습하러 가기</button>
+            <button type="button" class="btn btn-outline-light moveToStudying" id="button-setting">수어 학습하러 가기</button>
             <button type="button" class="btn btn-outline-light" id="button-setting">수어 연습하러 가기</button>
           </div>
 
@@ -29,7 +46,7 @@
             <div id="text-box1">
               <h3>한국 수어 학습하러 가기</h3>
               <p>한국 수어는 수화의 종류 중 하나입니다. 한국어와 함께 대한민국의 공용어로 지정되어있습니다. 단어로 표현을 못하는 것은 한글 지문자로 나타낸다. 영상과 실시간 웹캠의 모션캡쳐 방식으로 학습을 진행합니다.</p>
-              <button type="button" class="btn btn-outline-light" id="go-button">바로가기</button>
+              <button type="button" class="btn btn-outline-light moveToStudying2" id="go-button">바로가기</button>
             </div>
             <div id="image"></div>
           </div>
@@ -96,5 +113,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/public/index.js"></script>
+    
+
 </body>
 </html>

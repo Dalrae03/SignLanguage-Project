@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/templates/practice.css" type="text/css" rel="stylesheet"/>
+    <title>Hand Gesture Recognition</title>
+    <style>
+        body { 
+  margin: 0;
+  background-image: url(/public/test.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#Content {
+  width: 1619px;
+  height: 991px;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin: auto;
+  border-radius: 15px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 스크롤바 없애기 */
+  scrollbar-width: none; /* 파이어폭스 스크롤바 없애기 */
+}
+
+#Content::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 없애기 */
+}
+
+
+#main-container {
+    display: flex;
+    margin-top: 130px;
+    margin-left: 82px;
+}
+
+img {
+    margin-right: 17px;
+}
+
+    </style>
+</head>
+<body>
+    <div id = Content>
+        <div id="main-container">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed" width="620" height="460">
+            <iframe width="818" height="460" src="https://www.youtube.com/embed/LZlYeFV2XqQ?si=rq9u1_T-6VmKQg4n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        </div>
+    </div>
+</body>
+</html>
