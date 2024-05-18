@@ -12,35 +12,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="Content">
-        <div id="main-container">
-            <div id="image">
-                <!--이미지 넣기-->
-            </div>
-    
-    
-            <div id="information">
-                <h1>Welcome!</h1>
-                <div id="text-group">
-                    <p id="logotext">Connect To Hand</p><p>에 오신 것을 환영합니다.</p>
-                </div>
-            
-                <form>
-                    <p>Email</p>
-                    <input required type="email" style="font-size: 25px;"/>
-                    <p>Password</p>
-                    <input required type="password" style="font-size: 25px;"/>
+    <div id="main-container">
+        <div id="image">
+            <!--이미지 넣기-->
+        </div>
 
-                    <div id="button-group">
-                        <div id="aip-group">
-                            <a href="#" ><img src="/public/talk.png"></a>
-                            <img src="/public/gogle.png">
-                            <img src="/public/facebook.png">
-                        </div>
-                        <button type="button" class="btn btn-secondary" id="finsh-button">로그인</button>
-                    </div>
-                </form>
+
+        <div id="information">
+            <h1>Welcome!</h1>
+            <div id="text-group">
+                <p id="logotext">Connect To Hand</p><p>에 오신 것을 환영합니다.</p>
             </div>
+        
+            <form method="post" action="/login">
+                <p>Email</p>
+                <input required name="email" type="email" style="font-size: 25px;"/>
+                <p>Password</p>
+                <input required name="password" type="password" style="font-size: 25px;"/>
+
+                <div id="button-group">
+                    <div id="aip-group">
+                        <a href="#" ><img src="/public/talk.png"></a>
+                        <img src="/public/gogle.png">
+                        <img src="/public/facebook.png">
+                    </div>
+                    <button type="submit" class="btn btn-secondary" id="finsh-button">로그인</button>
+                </div>
+            </form>
         </div>
     </div>
     
