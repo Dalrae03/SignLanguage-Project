@@ -86,7 +86,6 @@ router.get('/login', function(req, res){
 router.post('/login', async function (req, res) {
   let email = req.body.email;
   let password = req.body.password;
-  console.log(email, password);
   if (email && password) {        
       pool.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, password], async function(error, results, fields) {
         const user = results[0];
@@ -133,6 +132,17 @@ router.get('/logout', function(req, res) {
       }
   });
 });
+
+
+
+router.get('/lecture', function(req, res){
+  res.render('firstLayout2', {
+    title: "CTH 자화 자음 학습하기",
+    content: "Main Page/lecture",
+    username: req.session.nickname // 사용자 이름 전달
+});
+  })
+
 
 
 

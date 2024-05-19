@@ -1,0 +1,15 @@
+
+#Content {
+    width: 1619px;
+    height: 991px;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: auto;
+    border-radius: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 스크롤바 없애기 */
+    scrollbar-width: none; /* 파이어폭스 스크롤바 없애기 */
+}
+
+#Content::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 없애기 */
+}
