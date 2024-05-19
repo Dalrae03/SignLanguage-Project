@@ -1,0 +1,33 @@
+body { 
+    margin: 0;
+    background-image: url(test.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#main-container {
+    display: flex;
+    margin-top: 130px;
+    margin-left: 134px;
+}
+
+#cam {
+    width: 340px;
+    height: 281px;
+    background-color: azure;
+    position: absolute;
+    margin-left: 957px;
+    margin-top: 53px;
+}
+
+#acidRain {
+    width: 1344px;
+    height: 826px;
+    border-radius: 29px;
+    background-color: antiquewhite;
+}

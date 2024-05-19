@@ -26,9 +26,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const FlashButton = document.querySelector(".moveToStudying");
 const FlashButton2 = document.querySelector(".moveToStudying2");
+const goToFlashBut = document.querySelector(".goToFlash")
+const goToAcidRainBut = document.querySelector(".goToacidRain")
+
 
 function goToStudying() {
     window.location.href = '/studying';
+}
+
+function goToFlash() {
+    window.location.href = '/flashCard';
+}
+
+function goToacidRain() {
+    window.location.href = '/acidRain';
 }
 
 function checkLogin() {
@@ -41,5 +52,7 @@ function checkLogin() {
 
 FlashButton.addEventListener("click", goToStudying);
 FlashButton2.addEventListener("click", goToStudying);
+goToFlashBut.addEventListener("click", goToFlash);
+goToAcidRainBut.addEventListener("click", goToacidRain);
 
 
