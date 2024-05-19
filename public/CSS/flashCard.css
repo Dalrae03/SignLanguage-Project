@@ -1,0 +1,83 @@
+body { 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+#main-container {
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 213px;
+}
+
+h2 {
+    font-family: Gothic A1;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: white;
+    margin-bottom: 42px;
+}
+
+#content {
+    display: flex;
+}
+
+#right-contant {
+    display: flex;
+}
+
+#slice {
+    width: 431px;
+    height: 609px;
+    top: 268px;
+    border-radius: 30px;
+    background-color: beige;
+    overflow: hidden;
+}
+
+#card {
+    display: flex;
+    height:609px; /**slide와 images의 높이가 다르면 부자연스럽게 표시돼 slide의 높이에 맞게 높이를 바꾼다.**/
+    transition: transform 0.5s;
+}
+
+img {
+    width: 431px;
+}
+
+.nextButten {
+    width: 40px;
+    height: 40px;
+    border: 1px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 50px;
+    margin-top: 285px;
+    position: absolute;
+}
+
+.back {
+    margin-left: -20px;
+}
+
+.next {
+    margin-left: 411px;
+}
+
+
+#cam {
+    width: 806px;
+    height: 604px;
+    background-color: azure;
+    margin-left: 64px;
+}

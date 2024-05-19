@@ -146,6 +146,39 @@ router.get('/lecture', function(req, res){
 
 
 
+router.get('/flashCard', function(req, res){
+  if (req.session.is_logined) {
+    // 로그인된 경우
+    res.render('firstLayout2', {
+        title: "CTH 플래시카드",
+        content: "Main Page/flashCard",
+        username: req.session.nickname // 사용자 이름 전달
+    });
+} else {
+    // 로그인되지 않은 경우
+    res.redirect('/?nologin');
+}   
+})
+
+
+router.get('/acidRain', function(req, res){
+  if (req.session.is_logined) {
+    // 로그인된 경우
+    res.render('firstLayout2', {
+        title: "CTH 산성비",
+        content: "Main Page/acidRain",
+        username: req.session.nickname // 사용자 이름 전달
+    });
+} else {
+    // 로그인되지 않은 경우
+    res.redirect('/?nologin');
+}
+})
+
+
+
+
+
 //res.send('About Page') 응답으로 문자, 숫자, 딕셔너리같이 데이터를 전달할때는 send 사용
 
 
