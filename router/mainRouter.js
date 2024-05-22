@@ -176,6 +176,13 @@ router.get('/acidRain', function(req, res){
 })
 
 
+router.get('/class', function(req, res){
+  res.render('firstLayout2', {
+    title: "CTH 자화 자음 1강",
+    content: "Main Page/class",
+    username: req.session.nickname // 사용자 이름 전달
+});
+  })
 
 
 

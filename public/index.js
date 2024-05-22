@@ -42,6 +42,7 @@ function goToacidRain() {
     window.location.href = '/acidRain';
 }
 
+
 function checkLogin() {
     // 세션에서 로그인 상태를 확인
      if (!req.session.is_logined) {
