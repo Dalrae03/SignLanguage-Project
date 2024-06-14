@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting To Hand: 손으로 이어지는 연결</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .video-background {
+          position: fixed; /* 비디오를 화면에 고정 */
+          right: 0;
+          bottom: 0;
+          min-width: 100%; /* 최소 너비 100% */
+          min-height: 100%; /* 최소 높이 100% */
+          width: auto; /* 자동 너비 조정 */
+          height: auto; /* 자동 높이 조정 */
+          z-index: -100; /* 다른 요소들 뒤에 위치 */
+          background: no-repeat;
+          background-size: cover; /* 배경 크기 커버로 설정 */
+      }
+
+      #sub-navigate {
+          width: 211px;
+          height: 941px;
+          background-image: url("{{ url_for('static', filename='studyingBanners/sub_banner.png') }}");
+          margin-left: 62px;
+      }
+  </style>
+</head>
+
+<body>
+    <div id="body">
+      <video autoplay muted loop class="video-background">
+        <source src="{{ url_for('static', filename='video/background.mp4') }}" type="video/mp4">
+      </video>
+        <div id="main-container">
+          <div id="banner">
+            <!--이미지 넣기-->
+          </div>
+
+          <div id="button-group">
+            <button type="button" class="btn btn-outline-light moveToStudying" id="button-setting">수어 학습하러 가기</button>
+            <button type="button" class="btn btn-outline-light" id="button-setting">수어 연습하러 가기</button>
+          </div>
+
+          <div id="sub-container">
+            <div id="text-box1">
+              <h3>한국 수어 학습하러 가기</h3>
+              <p>한국 수어는 수화의 종류 중 하나입니다. 한국어와 함께 대한민국의 공용어로 지정되어있습니다. 단어로 표현을 못하는 것은 한글 지문자로 나타낸다. 영상과 실시간 웹캠의 모션캡쳐 방식으로 학습을 진행합니다.</p>
+              <button type="button" class="btn btn-outline-light moveToStudying2" id="go-button">바로가기</button>
+            </div>
+            <div id="image" class="main-banner2" style="background-image: url('{{ url_for('static', filename='img/mainBanners/main_banner2.png') }}');"></div>
+          </div>
+
+          <div id="sub-container">
+            <div id="image" class="main-banner3" style="background-image: url('{{ url_for('static', filename='img/mainBanners/main_banner3.png') }}');"></div>
+            <div id="text-box2">
+              <h3>지문자 학습하러가기</h3>
+              <p>지문자는 수화에서 표현할 수 없는 말을 보충하기 위해 문자언어를 손모양이나 손동작으로 표현하는 것이다. 영상과 실시간 웹캠의 모션캡쳐 방식으로 학습을 진행합니다.</p>
+              <button type="button" class="btn btn-outline-light" id="go-button">바로가기</button>
+            </div>
+          </div>
+
+          <div id="game-container">
+            <h3>게임으로 연습하기</h3>
+
+            <div id="content-box">
+              <div id="game-box">
+                <div id="game-image" style="background-image: url('{{ url_for('static', filename='img/mainBanners/game_banner1.png') }}');"></div>
+                <div id="game-text">
+                  <div id="game-sub-text">
+                    <h4>플래시카드</h4>
+                    <p id="game-ex">인사말, 자기소개, 이름 물어보기, 자기 이름, 얼굴 이름에 대한 설명을 학습할 수 있다.</p>
+                  </div>
+                  <button type="button" class="btn btn-light goToFlash" id="game-button">></button>
+                </div>
+              </div>
+
+              <div id="game-box">
+                <div id="game-image" style="background-image: url('{{ url_for('static', filename='img/mainBanners/game_banner2.png') }}');"></div>
+                <div id="game-text">
+                  <div id="game-sub-text">
+                    <h4>산성비</h4>
+                    <p id="game-ex">수어 비가 내린다. 땅에 닿기 전에 적절한 수어를 실행해야한다.</p>
+                  </div>
+                  <button type="button" class="btn btn-light goToacidRain" id="game-button">></button>
+                </div>
+              </div>
+
+              <div id="game-box">
+                <div id="game-image" style="background-image: url('{{ url_for('static', filename='img/mainBanners/game_banner3.png') }}');"></div>
+                <div id="game-text">
+                  <div id="game-sub-text">
+                    <h4>낱말 맞추기</h4>
+                    <p id="game-ex">멀티 플레이가 가능한 게임으로 캐치 마인드 게임을 수어로 즐길 수 있다.</p>
+                  </div>
+                  <button type="button" class="btn btn-light" id="game-button">></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+
+    <div id="footer">
+      <div id="logo-text">Connecting To Hand</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>
