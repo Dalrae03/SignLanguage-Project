@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 142px;
+}
+
+#start-contain {
+    margin-bottom: 184px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+#sub-navigate {
+  width: 211px;
+  height: 941px;
+  background-image: url(/static/img/studyingBanners/sub_banner.png);
+  margin-left: 62px;
+}
+
+#lecture-text {
+  margin-bottom: 38px;
+  font-family: Gothic A1;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-left: 13px;
+}
+
+#lecture-list {
+  width: 1140px;
+  margin-right: 123px;
+  margin-bottom: 244px;
+}
+
+#main-contents {
+  width: 1140px;
+  margin-left: 80px;
+  margin-right: 123px;
+}
+
+#lecture-card {
+  width: 1140px;
+  height: 202px;
+  display: flex;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+#lecture-img {
+  width: 220px;
+  height: 125px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 9px;
+  margin-left: 13px;
+  margin-top: 58px;
+}
+
+#explains {
+  margin-top: 103px;
+  margin-left: 32px;
+  width: 875px;
+}
+
+#title {
+  color: white;
+  font-family: Gothic A1;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+}
+
+#substance {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  font-family: Gothic A1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16.25px;
+  color: white;
+}
+
+.button-design {
+  width: 112px;
+  height: 30px;
+  background-color: rgba(62, 62, 62, 1);
+  border-color: rgba(62, 62, 62, 1);
+  border-radius: 19px;
+  font-size: 12px;
+  margin-top: 2px;
+}

@@ -1,0 +1,89 @@
+body { 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 142px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+#main-text {
+  margin-bottom: 32px;
+}
+
+#regular-curriculum {
+  margin-bottom: 128px;
+}
+
+
+#sub-text {
+  margin-bottom: 27px;
+}
+
+#sub-navigate {
+  width: 211px;
+  height: 941px;
+  background-image: url(/static/img/studyingBanners/sub_banner.png);
+  margin-left: 62px;
+}
+
+#main-contents {
+  margin-left: 80px;
+  margin-right: 123px;
+}
+
+#banner {
+  width: 1140px;
+  height: 504px;
+  background-image: url(/static/img/studyingBanners/main_banner.png);
+  cursor: pointer;
+}
+
+#sub-banner {
+  width: 1140px;
+  height: 532px;
+  white-space: nowrap;
+  overflow: auto;
+  overflow: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 스크롤바 없애기 */
+  scrollbar-width: none; /* 파이어폭스 스크롤바 없애기 */
+}
+
+#sub-banner::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 스크롤바 없애기 */
+}
+
+#curriculum-card {
+  margin-right: 15px;
+}
+
+#sub-banner {
+  margin-bottom: 166px;
+}

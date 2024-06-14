@@ -1,0 +1,109 @@
+body { 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+#background-space {
+    background-color: rgba(27, 28, 37, 0.75);
+    width: 1607px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#player-container {
+    width: 400px;
+    margin: 0px;
+    height: 100%;
+    padding-bottom: 6px;
+}
+
+h2 {
+    font-family: Gothic A1;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 4px;
+    margin-left: 163px;
+}
+
+#myLevel {
+    color: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+
+
+#player-profile {
+    height: 178.13px;
+    border-radius: 100px;
+    margin-top: 201px;
+    margin-left: 123px;
+}
+
+#myLevel {
+    margin-left: 201px;
+    margin-top: 16.87px;
+}
+
+
+#player-information {
+    margin-top: 31px;
+}
+
+#mystatus {
+    margin-left: 75px;
+}
+
+#time {
+    margin-top: 53px;
+    margin-left: 76px;
+}
+
+#calender {
+    margin-top: 68px;
+    margin-left: 65px;
+}
+
+
+
+#mystudy {
+    margin-right: 69px;
+}
+
+#status-header {
+    margin-top: 201px;
+}
+
+#learning-status {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pattern-header {
+    margin-top: 17px;
+}
+
+#learning-pattern {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
